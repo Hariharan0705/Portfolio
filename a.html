@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hariharan S - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <img src="./Logo.jpg" alt="Logo">
+        <nav>
+            <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section  class="container">
+        <h2 class="section-title" >About Me</h2>
+        <div id="about">
+        <div>
+            <p><strong> Hello, I'm Hariharan S</strong></p>
+            <p>Software Engineer</p>
+            <p>Dedicated Software Engineer with expertise in Java, React.js, and MySQL. Passionate about developing scalable web applications and implementing secure cryptographic solutions. Skilled in designing innovative, efficient software systems and driving impactful results.</p>
+        </div>
+        <img src="./Photo.jpg" alt="Hariharan S" class="about-photo">
+        </div>
+    </section>
+
+    <section id="education" class="container">
+        <h2 class="section-title" >Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="content">
+                    <h3>Bachelor of Technology in Computer Science</h3>
+                    <p>Nandha College of Technology, CGPA: 7.83</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="icon"><i class="fas fa-school"></i></div>
+                <div class="content">
+                    <h3>Higher Secondary School</h3>
+                    <p>Govt. Boys Hr. Sec. School, Pallipalayam, 55%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="icon"><i class="fas fa-school"></i></div>
+                <div class="content">
+                    <h3>Secondary School Leaving Certificate</h3>
+                    <p>Govt. Boys Hr. Sec. School, Pallipalayam, 85%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./Project 1.jpeg" alt="Fingerprint Authentication">
+                <h3>Efficient and Privacy-Preserving Fingerprint Authentication</h3>
+                <p>Implemented Pair-Polar technology for double encryption to secure biometric data and ensure confidentiality and data integrity.</p>
+            </div>
+            <div class="project-card">
+                <img src="./Project 2.jpg" alt="Plasma Donor Application">
+                <h3>Plasma Donor Application</h3>
+                <p>Developed a platform for connecting donors and seekers with features like real-time notifications and location-based services.</p>
+            </div>
+            <div class="project-card">
+                <a href="https://linedin-clone-tau.vercel.app/" target="_blank">
+                    <img src="./Project 3.jpeg" alt="LinkedIn Clone">
+                </a>
+                <h3>LinkedIn Clone</h3>
+                <p>Designed a LinkedIn-like webpage with dynamic content filtering, post creation, and a responsive user interface.</p>
+            </div>
+            <div class="project-card">
+                <a href="https://redbus-clone-zeta.vercel.app/" target="_blank">
+                    <img src="./Project 4.jpg" alt="CRM System">
+                </a>
+                <h3>Red Bus Clone</h3>
+                <p>"A Redbus clone webpage built using only HTML and CSS, visually replicating the Redbus website without functional interactivity.".</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container">
+        <h2 class="section-title" >Professional Skills</h2>
+        <div class="skills">
+            <img src="./JAVA.webp" alt="Java">
+            <img src="./React JS.png" alt="React.js">
+            <img src="./MySQL.png" alt="MySQL">
+            <img src="./HTML5.png" alt="HTML">
+            <img src="./CSS3.png" alt="CSS">
+            <img src="./JAVASCRIPT.webp" alt="JavaScript">
+            <img src="./Spring.png" alt="Spring">
+            <img src="./Hibernate.jpg" alt="Hibernate">
+            <img src="./C.png" alt="C">
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2 class="section-title" >Contact</h2>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="6ebedd35-b282-4268-94da-d640413511ae">>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hariharan S | <a href="https://github.com/Hariharan0705" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/hariharan-srinivasan-cse/" target="_blank">LinkedIn</a> <br>React Portfolio is coming soon</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted!');
+        });
+    </script>
+</body>
+</html>
